@@ -28,8 +28,9 @@
 <body>
  
   <!-- NavBar -->
-  <div id="nav" w3-include-html="nav.html"></div>
- 
+  <!-- <div id="nav" w3-include-html="nav.html"></div>-->
+<script> $("#container").load("nav.html"); // contenu.html se trouve au même niveau dans l’arborescence.</script>
+<div id="container"></div>
   <!-- Page Content -->
   <div class="container">
 
