@@ -1,0 +1,56 @@
+/* styles.css pour site Météo Fusion */
+:root{
+  --accent:#0077cc;
+  --accent-dark:#005fa3;
+  --bg:#ffffff;
+  --muted:#6b7280;
+  --radius:12px;
+  --container-width:1100px;
+  --max-image-width:360px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:#111}
+.container{max-width:var(--container-width);margin:0 auto;padding:2rem}
+
+/* Header hero */
+.hero{background:linear-gradient(180deg,#f7fbff,#ffffff);padding:3.5rem 0;text-align:center}
+.logo{width:96px;height:96px;border-radius:16px;display:block;margin:0 auto 1rem;object-fit:cover}
+.hero h1{margin:.25rem 0;font-size:2rem;letter-spacing:-0.5px}
+.tagline{color:var(--muted);margin:.5rem 0 1.25rem}
+
+/* Buttons */
+.btn{display:inline-block;padding:.75rem 1.25rem;border-radius:10px;text-decoration:none;font-weight:600;transition:transform .12s ease}
+.btn:active{transform:translateY(1px)}
+.primary{background:var(--accent);color:#fff}
+.primary:hover{background:var(--accent-dark)}
+.secondary{background:#f1f5f9;color:var(--accent);border:1px solid #e6eef8}
+
+/* Sections */
+h2{font-size:1.25rem;margin:0 0 1rem}
+.about p{color:var(--muted);margin:0 0 1rem}
+.feature-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;list-style:none;padding:0;margin:0}
+.feature-list li{background:#fff;border-radius:10px;padding:1rem;border:1px solid #eef3fb;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+
+/* Gallery */
+.screenshots .gallery{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;align-items:center}
+.shot{max-width:var(--max-image-width);text-align:center}
+.shot img{display:block;margin:0 auto;border-radius:var(--radius);width:100%;height:auto;object-fit:cover;box-shadow:0 10px 30px rgba(2,6,23,0.08);border:1px solid #eef6ff}
+.shot figcaption{font-size:.9rem;color:var(--muted);margin-top:.5rem}
+
+/* CTA section */
+.cta{background:#fbfdff;border-top:1px solid #eef6ff;padding:2rem;border-radius:12px;text-align:center}
+
+/* Footer */
+.site-footer{border-top:1px solid #eef3fb;padding:1.25rem 0;margin-top:2rem}
+.site-footer p{margin:0;color:var(--muted)}
+.footer-links{display:flex;gap:1rem;justify-content:center;margin-top:.5rem}
+.footer-links a{color:var(--muted);text-decoration:none;font-size:.95rem}
+
+/* Responsive */
+@media (max-width:720px){
+  .container{padding:1rem}
+  .hero{padding:2rem 0}
+  .feature-list{grid-template-columns:1fr}
+  :root{--max-image-width:280px}
+}
