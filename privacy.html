@@ -8,13 +8,22 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="img/favicon.ico">
 </head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img src="img/icon-meteo-fusion.jpg" alt="Logo Météo Fusion" class="logo">
+      <h1>Politique de Confidentialité — Météo Fusion</h1>
+    </div>
+  </header>  
+  <main>
 
-Politique de Confidentialité — Météo Fusion
 
-Dernière mise à jour : 16 juillet 2026
+    <section class="features container">
+      <h2>Dernière mise à jour : 16 juillet 2026</h2>
 
 Le respect de votre vie privée est notre priorité absolue. Cette politique de confidentialité détaille la manière dont l’application mobile Météo Fusion (ci-après "l'Application") traite, utilise et protège vos informations lorsque vous l'utilisez.
-1. Collecte et Traitement des Données
+
+     <h2> 1. Collecte et Traitement des Données</h2>
 
 Météo Fusion est conçue pour fonctionner avec un maximum de transparence et un minimum de collecte de données personnelles.
 
@@ -24,7 +33,7 @@ Météo Fusion est conçue pour fonctionner avec un maximum de transparence et u
 
     Données d’évaluation et d'historique : L'évaluation de la précision des modèles météo (Météo France, AccuWeather, La Météo Agricole) et l'historique de vos consultations sont exclusivement stockés en local sur votre appareil mobile à l'aide d'une base de données sécurisée (Room SQLite). Aucune de ces informations n'est transmise à un serveur distant.
 
-2. Services et Plateformes Tiers
+<h2>2. Services et Plateformes Tiers</h2>
 
 L’Application s'appuie sur des services externes fiables pour délivrer ses prévisions météo comparatives et dynamiques :
 
@@ -32,7 +41,7 @@ L’Application s'appuie sur des services externes fiables pour délivrer ses pr
 
     Liens externes de sources météorologiques : L'Application contient des liens interactifs vous permettant de consulter directement les sites web officiels de nos sources d'information (Météo France, AccuWeather et La Météo Agricole). Lorsque vous cliquez sur l'un de ces liens, vous êtes redirigé vers leur site web respectif, régi par leur propre politique de confidentialité.
 
-3. Permissions Android Requises
+<h2>3. Permissions Android Requises</h2>
 
 Pour assurer son bon fonctionnement, l'Application demande les accès suivants sur votre appareil :
 
@@ -40,13 +49,13 @@ Pour assurer son bon fonctionnement, l'Application demande les accès suivants s
 
     Localisation précise/approximative (ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION) : (Facultatif) Utilisée uniquement si vous choisissez d'activer la météo locale automatique autour de vous.
 
-4. Sécurité et Conservation des Données
+<h2>4. Sécurité et Conservation des Données</h2>
 
     Puisqu'aucun serveur centralisé n'est utilisé pour stocker vos préférences ou votre historique de recherche, vos données restent sous votre contrôle exclusif sur votre appareil.
 
     Toutes les connexions réseau effectuées par l'Application pour récupérer les données météo sont sécurisées et chiffrées via le protocole HTTPS.
 
-5. Vos Droits (Conformité RGPD)
+<h2>5. Vos Droits (Conformité RGPD)</h2>
 
 Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un contrôle total sur vos données :
 
@@ -54,10 +63,28 @@ Conformément au Règlement Général sur la Protection des Données (RGPD), vou
 
     Retrait du consentement : Vous pouvez activer ou désactiver les autorisations de localisation à tout moment via les paramètres système de votre appareil.
 
-6. Contact
+<h2>6. Contact</h2>
 
 Pour toute question ou demande relative à cette politique de confidentialité, vous pouvez nous contacter directement à l'adresse e-mail suivante :
 
-    Courriel : raspidev@gmail.com
-
+    Courriel : <a href="mailto:raspidev@gmail.com">raspidev@gmail.com</a>
+    </section>      
+  </main>  
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Météo Fusion - By Raspidev</p>
+      <nav class="footer-links">
+        <a href="mailto:raspidev@gmail.com">Contact - </a>
+      </nav>
+ <nav class="footer-links">
+        <a href="privacy.html">Politique de Confidentialité</a>
+      </nav>
+    </div>
+  </footer>
+  
+  <script>
+    // Mettre l'année courante dans le footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
