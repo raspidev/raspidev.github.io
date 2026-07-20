@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Météo Fusion — Prévisions simples et précises</title>
+  <meta name="description" content="Météo Fusion — application Android pour prévisions locales, widgets et alertes.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <a href="index.html"><img src="img/icon-meteo-fusion.jpg" alt="Logo Météo Fusion" class="logo"></a>
+      <h1>Météo Fusion</h1>
+      <p class="tagline">Prévisions locales.</p>
+      <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.votreapp" target="_blank" rel="noopener">Télécharger sur Google Play</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="about container">
+      <h2>À propos</h2>
+      <p>Météo Fusion combine plusieurs sources pour offrir des prévisions fiables.</p>
+    </section>
+
+    <section class="features container">
+      <h2>Fonctionnalités</h2>
+      <ul class="feature-list">
+        <li><strong>Prévisions</strong> horaires et 15 jours</li>
+        <li><strong>Sources</strong> Météo France, La Météo Agricole et Accuweather</li>
+      </ul>
+    </section>
+
+    <section class="screenshots container">
+      <h2>Captures d'écran</h2>
+      <div class="gallery">
+        <figure class="shot">
+          <img src="img/meteo-fusion-app.jpg" alt="Capture d'écran 1">
+          <figcaption>Écran principal</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="img/meteo-fusion-app-15jours.jpg" alt="Capture d'écran 2">
+          <figcaption>Prévisions horaires</figcaption>
+        </figure>
+		  <figure class="shot">
+          <img src="img/meteo-fusion-app-details.jpg" alt="Capture d'écran 3">
+          <figcaption>Détails horaires</figcaption>
+        </figure>
+		<figure class="shot">
+          <img src="img/widget.jpg" alt="Capture d'écran 4">
+          <figcaption>Widget</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <h2>Prêt à essayer</h2>
+      <p>Téléchargez l'application</p>
+      <a class="btn secondary" href="https://play.google.com/store/apps/details?id=com.votreapp" target="_blank" rel="noopener">Voir sur Google Play</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-links">
+        <a href="mailto:raspidev@gmail.com">Contact</a> - <a href="privacy.html">Politique de Confidentialité</a>
+      </nav>	
+      <p>&copy; <span id="year"></span> Météo Fusion - By Raspidev</p>
+  </footer>
+
+  <script>
+    // Mettre l'année courante dans le footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
