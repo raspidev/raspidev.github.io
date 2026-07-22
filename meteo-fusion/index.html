@@ -9,6 +9,60 @@
   <link rel="icon" href="img/favicon.ico">
 </head>
 <body>
+<header class="topbar" role="banner">
+    <div class="container-topbar">
+      <a href="../index.html" class="brand" aria-label="Accueil">
+		<img src="img/logo-512.png"class="logo-topbar" width="36" height="36"alt="Raspidev">
+        <span class="site-name">Raspidev</span>
+      </a>
+
+      <nav class="social" aria-label="Réseaux sociaux">
+        <a href="https://twitter.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <!-- Twitter / X icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M22 5.92c-.66.3-1.37.5-2.12.6.76-.46 1.34-1.18 1.61-2.04-.71.42-1.5.72-2.34.88A3.7 3.7 0 0016.15 4c-2.05 0-3.72 1.66-3.72 3.71 0 .29.03.57.1.84-3.09-.16-5.83-1.64-7.66-3.9-.32.55-.5 1.18-.5 1.86 0 1.28.65 2.41 1.64 3.07-.6-.02-1.17-.18-1.66-.46v.05c0 1.8 1.28 3.3 2.98 3.64-.31.08-.64.12-.98.12-.24 0-.48-.02-.71-.07.48 1.5 1.86 2.6 3.5 2.63A7.44 7.44 0 012 19.54 10.5 10.5 0 008.29 21c6.55 0 10.14-5.42 10.14-10.13v-.46c.7-.5 1.3-1.12 1.78-1.83-.64.28-1.32.47-2.03.56z"/>
+          </svg>
+        </a>
+
+        <a href="https://facebook.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <!-- Facebook icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.88 3.77-3.88 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.61.77-1.61 1.56v1.87h2.74l-.44 2.9h-2.3v7.03C18.34 21.2 22 17.06 22 12.07z"/>
+          </svg>
+        </a>
+
+        <a href="https://instagram.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <!-- Instagram icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.2A4.8 4.8 0 1016.8 13 4.8 4.8 0 0012 8.2zm6.4-3.6a1.12 1.12 0 11-1.12 1.12A1.12 1.12 0 0118.4 4.6zM12 10.6A1.4 1.4 0 1110.6 12 1.4 1.4 0 0112 10.6z"/>
+          </svg>
+        </a>
+
+        <a href="https://linkedin.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <!-- LinkedIn icon -->
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M20.45 20.45h-3.6v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.07 1.4-2.07 2.85v5.5h-3.6V9h3.46v1.56h.05c.48-.9 1.66-1.85 3.42-1.85 3.66 0 4.34 2.41 4.34 5.54v6.2zM5.34 7.43a2.09 2.09 0 11.01-4.18 2.09 2.09 0 01-.01 4.18zM7.14 20.45H3.54V9h3.6v11.45z"/>
+          </svg>
+        </a>
+		<!-- GitHub icon (SVG) -->
+		<a href="https://github.com/your-username" class="social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+		<svg width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+		<title>GitHub</title>
+		<path fill="currentColor" d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.93 3.19 9.11 7.61 10.59.56.1.76-.24.76-.53 0-.26-.01-1.12-.02-2.03-3.09.67-3.74-1.49-3.74-1.49-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.08-.67.08-.67 1.09.08 1.66 1.12 1.66 1.12.97 1.66 2.55 1.18 3.17.9.1-.7.38-1.18.69-1.45-2.47-.28-5.07-1.24-5.07-5.52 0-1.22.44-2.22 1.16-3-.12-.28-.5-1.4.11-2.92 0 0 .95-.3 3.12 1.15a10.8 10.8 0 012.84-.38c.96.01 1.93.13 2.84.38 2.17-1.45 3.12-1.15 3.12-1.15.61 1.52.23 2.64.11 2.92.72.78 1.16 1.78 1.16 3 0 4.29-2.61 5.24-5.09 5.52.39.34.73 1.02.73 2.06 0 1.49-.01 2.69-.01 3.06 0 .29.2.64.77.53 4.42-1.48 7.61-5.66 7.61-10.59C23.25 5.48 18.27.5 12 .5z"/>
+		</svg>
+		</a>
+
+		<!-- Bitbucket icon (SVG) -->
+		<a href="https://bitbucket.org/your-username" class="social-link" aria-label="Bitbucket" target="_blank" rel="noopener noreferrer">
+		<svg width="20" height="20" viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+		<title>Bitbucket</title>
+		<path fill="currentColor" d="M22 3H2l2.2 15.3c.2 1.4 1.4 2.4 2.8 2.4h10c1.4 0 2.6-1 2.8-2.4L22 3zm-6.6 6.2l-1.9 6.1h-1.1l-1.9-6.1H6.9L8.9 18h6.2l2-8.8h-1.7z"/>
+		</svg>
+		</a>
+
+      </nav>
+    </div>
+  </header>	
   <header class="hero">
     <div class="container">
       <a href="index.html"><img src="img/icon-meteo-fusion.jpg" alt="Logo Météo Fusion" class="logo"></a>
